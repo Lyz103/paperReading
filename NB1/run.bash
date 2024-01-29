@@ -1,0 +1,10 @@
+CUDA_VISIBLE_DEVICES=5 python3 -u main.py \
+--dataset=KuaiRand1000 \
+--train_dir=ssm1k0 \
+--maxlen=1000 \
+--lr=0.0002 \
+--batch_size=1024 \
+--dropout_rate=0.2 \
+--device=cuda \
+--backbone=mamba \
+--name=ssm1k0 > ./results/ssm1k0.out
