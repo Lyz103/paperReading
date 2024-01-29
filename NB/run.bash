@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=6 python3 -u main.py \
+--dataset=KuaiRand1000 \
+--train_dir=default \
+--maxlen=1000 \
+--dropout_rate=0.2 \
+--batch_size=256 \
+--lr=0.0001 \
+--device=cuda \
+--backbone=mamba \
+--name=1kssm3 \
+--hidden_units=50 > ./results/ssm1k3.out
